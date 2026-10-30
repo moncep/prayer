@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Lora', Georgia, Cambria, 'Times New Roman', Times, serif;
+    --font-heading: 'Cinzel', 'Playfair Display', Georgia, serif;
+    --font-malayalam: 'Noto Serif Malayalam', serif;
+  }
+}
+
+.font-malayalam,
+.font-noto-serif-malayalam {
+  font-family: 'Noto Serif Malayalam', serif;
+}
+
+/* Custom theme variables for Reader View */
+.theme-light {
+  --reader-bg: #fffbf5;
+  --reader-text: #292524;
+  --reader-card: #ffffff;
+  --reader-border: #f3e8d2;
+  --reader-muted: #78716c;
+}
+
+.theme-sepia {
+  --reader-bg: #f4ecd8;
+  --reader-text: #433422;
+  --reader-card: #ede3cc;
+  --reader-border: #dcd0b7;
+  --reader-muted: #79664f;
+}
+
+.theme-dark {
+  --reader-bg: #121214;
+  --reader-text: #e7e5e4;
+  --reader-card: #1c1917;
+  --reader-border: #292524;
+  --reader-muted: #a8a29e;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-heading {
+  font-family: var(--font-heading);
+}
+
+.font-prayer {
+  font-family: var(--font-serif);
+}
+
+.font-malayalam {
+  font-family: var(--font-malayalam);
+}
+
+/* Devotional Cross and Prayer styling inside HTML reader */
+.prayer-content h1 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: inherit;
+  line-height: 1.4;
+}
+
+.prayer-content hr {
+  margin: 1.25rem auto;
+  width: 50%;
+  border-top: 1px solid currentColor;
+  opacity: 0.2;
+}
+
+.prayer-content p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.prayer-content b,
+.prayer-content strong {
+  font-weight: 600;
+}
+
+.prayer-content em,
+.prayer-content i {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Smooth animated transitions */
+.transition-page {
+  animation: fadeIn 0.25s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
