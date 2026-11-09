@@ -19,7 +19,7 @@ export const FavoritesView: React.FC<FavoritesViewProps> = ({
   allPrayers,
   bookmarkedIds,
   onRemoveBookmark,
-  language = 'en',
+  language = 'ml',
 }) => {
   const isMl = language === 'ml';
   const favoritePrayers = allPrayers.filter(p => bookmarkedIds.has(p.id));

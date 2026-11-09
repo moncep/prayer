@@ -19,7 +19,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
   onSelectPrayer,
   onStartRosary,
   allPrayers,
-  language = 'en',
+  language = 'ml',
 }) => {
   const isMl = language === 'ml';
 

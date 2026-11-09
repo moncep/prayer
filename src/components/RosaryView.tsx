@@ -14,7 +14,7 @@ interface RosaryViewProps {
   language?: 'en' | 'ml';
 }
 
-export const RosaryView: React.FC<RosaryViewProps> = ({ onBack, onReadFullText, language = 'en' }) => {
+export const RosaryView: React.FC<RosaryViewProps> = ({ onBack, onReadFullText, language = 'ml' }) => {
   const isMl = language === 'ml';
   const mysteriesList = isMl ? ROSARY_MYSTERIES_ML : ROSARY_MYSTERIES;
   const prayersObj = isMl ? COMMON_PRAYERS_ML : COMMON_PRAYERS;

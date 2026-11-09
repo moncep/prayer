@@ -10,7 +10,7 @@ interface RosaryCounterProps {
   language?: 'en' | 'ml';
 }
 
-export const RosaryCounter: React.FC<RosaryCounterProps> = ({ onBack, onReadText, language = 'en' }) => {
+export const RosaryCounter: React.FC<RosaryCounterProps> = ({ onBack, onReadText, language = 'ml' }) => {
   const isMl = language === 'ml';
   const mysteriesList = isMl ? ROSARY_MYSTERIES_ML : ROSARY_MYSTERIES;
   const prayersObj = isMl ? COMMON_PRAYERS_ML : COMMON_PRAYERS;

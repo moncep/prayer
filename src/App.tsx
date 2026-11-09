@@ -26,7 +26,7 @@ export default function App() {
     } catch (e) {
       // fallback
     }
-    return 'en';
+    return 'ml';
   });
 
   const [activeView, setActiveView] = useState<ViewType>('home');
@@ -41,6 +41,7 @@ export default function App() {
 
   useEffect(() => {
     localStorage.setItem('pm_language', currentLanguage);
+    document.documentElement.lang = currentLanguage;
   }, [currentLanguage]);
 
   // Bookmarks stored in localStorage

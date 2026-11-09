@@ -21,7 +21,7 @@ export const CategoryView: React.FC<CategoryViewProps> = ({
   allPrayers,
   bookmarkedIds,
   onToggleBookmark,
-  language = 'en',
+  language = 'ml',
 }) => {
   const isMl = language === 'ml';
   const [selectedSubId, setSelectedSubId] = useState<string>('all');

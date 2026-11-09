@@ -19,7 +19,7 @@ export const PrayerReader: React.FC<PrayerReaderProps> = ({
   isBookmarked,
   onToggleBookmark,
   onOpenRosaryInteractive,
-  language = 'en',
+  language = 'ml',
 }) => {
   const isMl = language === 'ml' || prayer.language === 'ml';
 

@@ -15,7 +15,7 @@ export const SearchView: React.FC<SearchViewProps> = ({
   onSelectPrayer,
   onStartRosary,
   allPrayers,
-  language = 'en',
+  language = 'ml',
 }) => {
   const isMl = language === 'ml';
   const [query, setQuery] = useState('');
